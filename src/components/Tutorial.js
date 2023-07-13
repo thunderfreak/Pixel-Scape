@@ -16,7 +16,7 @@ export const Tutorial = () => {
     <div className="tutorial">
       <div className="modal-content">
         <h3>Welcome to Pixel Scape <img alt="logo" src="../../favicon.ico"/></h3>
-        <p>1. Press 1-5 to switch between the 5 types of blocks: Grass, Wood, Log, Glass, and Dirt.</p>
+        <p>1. Press 1-5 to switch between the 5 types of blocks: Dirt, Grass, Glass, Wood, and Log.</p>
         <p>2. Navigate the world using W, A, S, D and your mouse.</p>
         <p>3. Use Left Click to place blocks.</p>
         <p>4. Use Alt + Click to remove blocks.</p>
