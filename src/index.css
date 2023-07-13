@@ -76,7 +76,9 @@ body {
   color: black;
   border: 1px solid black;
 }
-
+.btn:hover{
+  cursor: pointer;
+}
 .tutorial {
   background-color: antiquewhite;
   width: 70%;
@@ -85,7 +87,7 @@ body {
   flex-direction: column;
   padding: 2rem;
   position: absolute;
-  top: 43%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
