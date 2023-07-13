@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -23,7 +25,7 @@ body {
   position: fixed;
   overflow: hidden;
   overscroll-behavior-y: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 40px;
 }
 
@@ -55,35 +57,69 @@ body {
   top: 0px;
   left: 10px;
 }
+.menu .btn {
+  margin: .4rem;
+}
+.btn {
+  font-family: 'Roboto Mono', monospace;
+  border: none;
+  padding: .4rem 1.5rem;
+  border-radius: .5em;
+}
+.btn-primary {
+  background-color: black;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
 .tutorial {
   background-color: antiquewhite;
-  width: 60%;
-  height: 25rem;
-  z-index: 9999;
+  width: 70%;
+  height: 28rem;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 2rem;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.tutorial img {
-  width: 3rem;
+.modal-content img {
+  width: 2.2rem;
   position: absolute;
-  top: 40px;
-  margin-left: 1rem;;
+  top: 45px;
+  margin-left: 1.2rem;;
 }
 .tutorial h3 {
-  font-size: 2.5rem;
-  margin: 1rem 0 2rem 0;
+  font-size: 2rem;
+  margin: .5rem 0 1.2rem 0;
 }
 .tutorial button {
-  margin-top:2rem;
-  width: 80px;
+  width: 100px;
 }
+.modal-signs {
+  font-size: .8rem;
+  text-align: center;
+  margin: 10rem 0;
+}
+.modal-socials a{
+  color: black;
+  margin: .5rem;
+  line-height: 3rem;
+}
+
 p {
-  font-size: 1rem;
+  font-size: .95rem;
   margin: .5rem 0;
+  line-height: 12px;
 }

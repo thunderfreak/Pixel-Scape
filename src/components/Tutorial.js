@@ -12,16 +12,24 @@ export const Tutorial = () => {
 
 
   return (
-    <div className="absolute centered tutorial">
+    <div>
+    <div className="tutorial">
       <div className="modal-content">
         <h3>Welcome to Pixel Scape <img alt="logo" src="../../favicon.ico"/></h3>
         <p>1. Press 1-5 to switch between the 5 types of blocks: Grass, Wood, Log, Glass, and Dirt.</p>
-        <p>2. Navigate the world using your mouse and W, A, S, D.</p>
+        <p>2. Navigate the world using W, A, S, D and your mouse.</p>
         <p>3. Use Left Click to place blocks.</p>
         <p>4. Use Alt + Click to remove blocks.</p>
-        <p>5. Click Save to store your world in your browser's local storage.</p>
-        <button onClick={closeModal}>Close</button>
       </div>
+      <div className="modal-signs">
+        Built with 🖤 and React by thunderfreak
+        <div className="modal-socials">
+          <a target="blank"href="https://www.linkedin.com/in/sohambhattacharjee/">LinkedIn </a>
+          <a target="blank"href="https://www.github.com/thunderfreak/">Github</a>
+        </div>
+      </div>
+    </div>
+    <button className="absolute centered btn btn-secondary" onClick={closeModal}>Click to Start</button>
     </div>
   );
 };
