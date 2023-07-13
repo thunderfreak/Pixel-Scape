@@ -1,6 +1,6 @@
 import React from "react";
 import { usePlane } from "@react-three/cannon";
-import { grassTexture } from "../images/textures";
+import { planeTexture } from "../images/textures";
 import { useStore } from "../hooks/useStore";
 
 export const Ground = () => {
@@ -9,7 +9,7 @@ export const Ground = () => {
     position: [0, -0.5, 0],
   }));
   const [addCube] = useStore((state) => [state.addCube]);
-  grassTexture.repeat.set(100, 100);
+  planeTexture.repeat.set(5, 5);
 
   return (
     <mesh
@@ -21,7 +21,7 @@ export const Ground = () => {
       ref={ref}
     >
       <planeBufferGeometry attach="geometry" args={[100, 100]} />
-      <meshStandardMaterial attach="material" map={grassTexture} />
+      <meshStandardMaterial attach="material" map={planeTexture} />
     </mesh>
   );
 };
